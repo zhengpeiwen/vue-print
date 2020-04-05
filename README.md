@@ -1,6 +1,6 @@
 # vue页面打印
 ## 概述
-在vue框架中实现打印功能，此插件是在github中看到然后自己修改整理了一下，本人才疏学浅，如有错误之处，还请见谅。
+    在vue框架中实现打印功能，此插件是在github中看到然后自己修改整理了一下，本人才疏学浅，如有错误之处，还请见谅。
 ## 基本使用方法
 
 ```javascript
@@ -67,8 +67,7 @@ print(){
 ```
 
 ## 分页打印
-
-![alt 属性文本](./image/1.png)
+#### 添加一个样式打印表格行不分裂
 
 ```css
 tr{
@@ -76,15 +75,18 @@ page-break-inside:avoid;
 }
 ```
 
+![alt 属性文本](./image/1.png)
+
 ![alt 属性文本](./image/4.png)
 
-![alt 属性文本](./image/2.png)
+#### 添加一个样式打印表格不分页，数据如果超过一页的就只能分页了
 
 ```css
 table{
 page-break-inside:avoid;
 }
 ```
+![alt 属性文本](./image/2.png)
 
 ![alt 属性文本](./image/3.png)
 
@@ -99,7 +101,7 @@ auto | 默认。如果必要则在元素内部插入分页符。 |
 avoid | 避免在元素内部插入分页符。 |
 inherit | 规定应该从父元素继承 page-break-inside 属性的设置。 |
 
-![alt 属性文本](./image/5.png)
+#### 添加样式打印表格分页
 
 ```css
 style=“page-break-before:always”
@@ -109,7 +111,7 @@ style=“page-break-before:always”
 style=“page-break-after:always”
 ```
 
-
+![alt 属性文本](./image/5.png)
 
 ### page-break-before
 
