@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <style lang="">
+     table {
+      page-break-inside: avoid;
+
+    }
+    tr {
+      page-break-inside: avoid;
+
+    }
+    td{
+      border:1px solid #000;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app" ref="print">
+    <button @click="print">打印</button>
+    <div>
+      打印区域 {{ title}}
+      <div style="page-break-before:always"></div>
+      <div>这是一个通告，要单独占一页</div>
+      <div style="page-break-after:always"></div>
+      <div style="page-break-before:left"></div>
+      <div>这是一个通告，要单独占一页</div>
+      <div style="page-break-after:left"></div>
+      <div style="page-break-before:right"></div>
+      <div>这是一个通告，要单独占一页</div>
+      <div style="page-break-after:right"></div>
+      <div>表格1</div>
+      <table  cellspacing="0">
+        <tbody>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+        </tbody>
+      </table>
+      <div>表格2</div>
+      <table  cellspacing="0">
+        <tbody>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+          <tr>
+            <td>这是一个表格</td>
+            <td>这是一个表格</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="no-print">
+      不打印区域
+    </div>
+  </div>
+  <script src="./vue.min.js"></script>
+  <script type="module">
+    import Print from './print.js';
+      Vue.use(Print);
+      var app = new Vue({
+        el: '#app',
+        data: {
+          title: '打印'
+        },
+        methods: {
+          berforeFun() {
+            alert('打印前');
+          },
+          afterFun() {
+            alert('打印后');
+          },
+          print() {
+            this.$print(this.$refs.print, {}, this.berforeFun, this.afterFun);
+          }
+        }
+      });
+    </script>
+</body>
+
+</html>
