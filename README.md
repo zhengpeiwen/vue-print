@@ -22,9 +22,9 @@ Vue.use(Print);
 ### 调用打印方法
 
 ```javascript
- print(){
-          this.$print(this.$refs.print);
-        }
+print(){
+   this.$print(this.$refs.print);
+}
 ```
 
 ## 设置不打印区域
@@ -73,7 +73,7 @@ print(){
 
 ![alt 属性文本]('../image/1.png')
 
-```
+```css
 tr{
 page-break-inside:avoid;
 }
@@ -83,7 +83,7 @@ page-break-inside:avoid;
 
 ![alt 属性文本]('../image/2.png')
 
-```
+```css
 table{
 page-break-inside:avoid;
 }
@@ -91,9 +91,9 @@ page-break-inside:avoid;
 
 ![alt 属性文本]('../image/3.png')
 
-```
-page-break-inside
-```
+
+### page-break-inside
+
 
 属性用于设置是否在指定元素中插入分页符。
 | 值 | 描述 |
@@ -104,17 +104,17 @@ inherit | 规定应该从父元素继承 page-break-inside 属性的设置。 |
 
 ![alt 属性文本]('../image/5.png')
 
-```
+```css
 style=“page-break-before:always”
 ```
 
-```
+```css
 style=“page-break-after:always”
 ```
 
-```
-page-break-before
-```
+
+### page-break-before
+
 
 属性用于设置是否在指定元素前插入分页符。
 | 值 | 描述 |
@@ -126,9 +126,9 @@ left |在元素之前足够的分页符， 直到指定的组件出现在一个�
 right | 在元素之前足够的分页符，直到指定的组件出现在一个右边的空白页上。 |
 inherit | 规定应该从父元素继承 page-break-before 属性的设置。 |
 
-```
-page-break-after
-```
+
+### page-break-after
+
 
 属性用于设置是否在指定元素后插入分页符。
 | 值 | 描述 |
