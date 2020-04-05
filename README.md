@@ -25,7 +25,7 @@ print(){
 
 ## 设置不打印区域
 
-![alt 属性文本]('./6.png')
+![alt 属性文本](./image/6.png)
 
 ```html
 <div class="no-print">
@@ -68,7 +68,7 @@ print(){
 
 ## 分页打印
 
-![alt 属性文本]('./image/1.png')
+![alt 属性文本](./image/1.png)
 
 ```css
 tr{
@@ -76,9 +76,9 @@ page-break-inside:avoid;
 }
 ```
 
-![alt 属性文本]('./image/4.png')
+![alt 属性文本](./image/4.png)
 
-![alt 属性文本]('./image/2.png')
+![alt 属性文本](./image/2.png)
 
 ```css
 table{
@@ -86,7 +86,7 @@ page-break-inside:avoid;
 }
 ```
 
-![alt 属性文本]('./image/3.png')
+![alt 属性文本](./image/3.png)
 
 
 ### page-break-inside
@@ -99,7 +99,7 @@ auto | 默认。如果必要则在元素内部插入分页符。 |
 avoid | 避免在元素内部插入分页符。 |
 inherit | 规定应该从父元素继承 page-break-inside 属性的设置。 |
 
-![alt 属性文本]('./image/5.png')
+![alt 属性文本](./image/5.png)
 
 ```css
 style=“page-break-before:always”
