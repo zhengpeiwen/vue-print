@@ -11,17 +11,17 @@ Vue.use(Print);
 
 ### 指定打印区域
 
-```
-      <button @click="print">打印</button>
+```html
+<button @click="print">打印</button>
 <div ref="print">
         打印区域 
-  </div>
+</div>
   
 ```
 
 ### 调用打印方法
 
-```
+```javascript
  print(){
           this.$print(this.$refs.print);
         }
@@ -31,42 +31,42 @@ Vue.use(Print);
 
 ![alt 属性文本]('../image/6.png')
 
-```
-      <div class="no-print">
+```html
+<div class="no-print">
         不打印区域
-      </div>
+</div>
 ```
 
 如果你想要打印的区域中有部分内容是不需要打印的，那么直接在class加上一个no-print就行了，
 no-print这个类名是可以自定义的。
 我如果想把类名改为no-print-me
 
-```
-      <div class="no-print-me">
+```html
+<div class="no-print-me">
         不打印区域
-      </div>
+</div>
 ```
 
 那么在调用打印页面时就需要传一个对象告诉程序我把no-print类名改了
 
-```
-          this.$print(this.$refs.print,{'no-print':'no-print-me'});
+```javascript
+  this.$print(this.$refs.print,{'no-print':'no-print-me'});
 
 ```
 
 ## 打印前和打印后调用方法
 中间的空对象{}是自定不打印区域的对象
 
-```
+```javascript
 berforeFun(){
-          alert("打印前")
-        },
-        afterFun(){
-          alert("打印后")
-        },
-        print(){
-          this.$print(this.$refs.print,{},this.berforeFun,this.afterFun);
-        }
+   alert("打印前")
+},
+afterFun(){
+   alert("打印后")
+},
+print(){
+   this.$print(this.$refs.print,{},this.berforeFun,this.afterFun);
+}
 ```
 
 ## 表格打印分页
