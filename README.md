@@ -2,14 +2,12 @@
 ## 概述
 在vue框架中实现打印功能，我也是在github中看到的插件然后自己修改整理了一下，本人才疏学浅，如有错误之处，还请见谅。
 ## 使用方法
-### 引入注册插件
 
 ```javascript
-import Print from  './print.js' ;  
-Vue.use(Print);
+import Print from  './print.js' ;  // 引入插件  
+Vue.use(Print); // 注册
 ```
 
-### 指定打印区域
 
 ```html
 <button @click="print">打印</button>
@@ -18,8 +16,6 @@ Vue.use(Print);
 </div>
   
 ```
-
-### 调用打印方法
 
 ```javascript
 print(){
@@ -54,7 +50,7 @@ no-print这个类名是可以自定义的。
 
 ```
 
-## 打印前和打印后调用方法
+## 打印前后调用方法
 在这里我讲打印前和打印后的对象也当参数传入
 中间的空对象{}是自定不打印区域的对象，如果不需要自定义直接空对象
 
@@ -70,7 +66,7 @@ print(){
 }
 ```
 
-## 表格打印分页
+## 分页打印
 
 ![alt 属性文本]('./image/1.png')
 
