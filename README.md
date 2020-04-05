@@ -4,7 +4,7 @@
 ## 使用方法
 ### 引入注册插件
 
-```
+```htlm
 import Print from  './print.js' ;  
 Vue.use(Print);
 ```
