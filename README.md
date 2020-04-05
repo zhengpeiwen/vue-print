@@ -25,7 +25,7 @@ print(){
 
 ## 设置不打印区域
 
-![alt 属性文本]('./image/6.png')
+![alt 属性文本]('./6.png')
 
 ```html
 <div class="no-print">
